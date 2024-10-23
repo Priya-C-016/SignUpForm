@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        div{
+            margin-bottom: 14px;;
+        }
+        #form-container{
+            border:20px solid rgb(227, 227, 227);
+            padding:50px ;
+            /* height:auto; */
+            /* max-height:300px; */
+            width:175px;
+            background-color: rgb(255, 255, 255);
+            justify-content: center;
+            align-items: center;
+        }
+
+        button{
+            color:white;
+            background-color: rgb(7, 111, 246);
+            width:170px;
+            border:none;
+            height:28px;
+        }
+        p{
+            color:red;
+            margin:0;
+            font-size:11px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Sign Up</h1>
+    <main>
+        <div id="form-container">
+            <form id="sign-up" action="#" method="get">
+                <div id="div1">
+                    <label for="username">Username:</label><br>
+                    <input type="text" name="username" id="username" r placeholder="Choose a username" >
+                    <p class="error"></p>
+                </div>
+                <div id="div2">
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" >
+                    <p class="error"></p>
+                </div>
+                <div id="div3">
+                    <label for="password">Password:</label><br>
+                    <input type="password" name="password" id="password" placeholder="Enter a strong password" >
+                    <p class="error"></p>
+                </div>
+                <div id="div4">
+                    <label for="confim">Confirm Password:</label><br>
+                    <input type="password" name="confim" id="confim" placeholder="Reenter your password" >
+                    <p class="error"></p>
+                </div>
+                <button type="submit">SIGN UP</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
